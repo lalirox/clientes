@@ -84,7 +84,7 @@ const App: React.FC = () => {
             <header className="text-center mb-8">
                 <h1 className="text-4xl font-bold text-gray-800">Clientes potenciales by Lalo Carrrillo</h1>
                 <p className="text-lg text-gray-600 mt-2">
-                    Encuentra clientes potenciales usando la API oficial de DENUE del INEGI.
+                    Encuentra clientes potenciales usando la API oficial del INEGI.
                 </p>
             </header>
 
@@ -132,7 +132,7 @@ const App: React.FC = () => {
                 </div>
             </main>
              <footer className="text-center mt-8 text-sm text-gray-500">
-                <p>Datos obtenidos de la API DENUE del INEGI. Esta es una herramienta independiente.</p>
+                <p>Datos obtenidos de la API del INEGI. Esta es una herramienta independiente.</p>
                 <p>Cumplimos con todas las normas de ley vigentes.</p>
                 <p>Lalo Carrillo</p>
             </footer>
