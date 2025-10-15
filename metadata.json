@@ -1,0 +1,5 @@
+{
+  "name": "Mexico Business Data Explorer",
+  "description": "An interactive tool to search and collect public data of companies in Mexico using the INEGI DENUE API. Find potential clients by keywords, location, and size, and export the results to CSV.",
+  "requestFramePermissions": []
+}
