@@ -1,5 +1,5 @@
 {
-  "name": "Mexico Business Data Explorer",
-  "description": "An interactive tool to search and collect public data of companies in Mexico using the INEGI DENUE API. Find potential clients by keywords, location, and size, and export the results to CSV.",
+  "name": "Clientes potenciales by Lalo Carrrillo",
+  "description": "Una herramienta interactiva para buscar y recolectar datos públicos de empresas en México usando la API DENUE del INEGI. Encuentra clientes potenciales por palabras clave, ubicación y tamaño, y exporta los resultados a CSV.",
   "requestFramePermissions": []
 }

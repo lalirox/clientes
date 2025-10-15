@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 export interface SearchParams {
@@ -41,7 +40,8 @@ export const SearchForm: React.FC<SearchFormProps> = ({ onSearch, isLoading }) =
         });
     };
 
-    const isGeoSearch = latitude || longitude || radius;
+    // FIX: Coerce isGeoSearch to a boolean. The 'disabled' prop on the input expects a boolean, not a string.
+    const isGeoSearch = !!(latitude || longitude || radius);
 
     return (
         <form onSubmit={handleSubmit} className="space-y-6">

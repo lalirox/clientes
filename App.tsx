@@ -83,9 +83,9 @@ const App: React.FC = () => {
     return (
         <div className="min-h-screen container mx-auto p-4 sm:p-6 lg:p-8">
             <header className="text-center mb-8">
-                <h1 className="text-4xl font-bold text-gray-800">Mexico Business Data Explorer</h1>
+                <h1 className="text-4xl font-bold text-gray-800">Clientes potenciales by Lalo Carrrillo</h1>
                 <p className="text-lg text-gray-600 mt-2">
-                    Find business leads using the official INEGI DENUE API.
+                    Encuentra clientes potenciales usando la API oficial de DENUE del INEGI.
                 </p>
             </header>
 
