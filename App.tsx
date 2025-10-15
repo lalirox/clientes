@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { SearchForm } from './components/SearchForm';
 import { ResultsTable } from './components/ResultsTable';
@@ -96,35 +95,35 @@ const App: React.FC = () => {
                     {isLoading && (
                         <div className="flex justify-center items-center flex-col text-center p-8">
                             <LoadingSpinner />
-                            <p className="mt-4 text-lg text-gray-600 font-semibold">Searching for businesses...</p>
-                            <p className="text-gray-500">This may take a moment.</p>
+                            <p className="mt-4 text-lg text-gray-600 font-semibold">Buscando empresas...</p>
+                            <p className="text-gray-500">Esto puede tardar un momento.</p>
                         </div>
                     )}
                     {error && (
                         <div className="flex justify-center items-center flex-col text-center p-8 bg-red-50 border border-red-200 rounded-lg">
                             <ErrorIcon />
-                            <p className="mt-4 text-lg text-red-700 font-semibold">An Error Occurred</p>
+                            <p className="mt-4 text-lg text-red-700 font-semibold">Ocurrió un error</p>
                             <p className="text-red-600">{error}</p>
                         </div>
                     )}
                     {!isLoading && !error && searchPerformed && companies.length === 0 && (
                          <div className="flex justify-center items-center flex-col text-center p-8 bg-blue-50 border border-blue-200 rounded-lg">
                             <InfoIcon />
-                            <p className="mt-4 text-lg text-blue-700 font-semibold">No Results Found</p>
-                            <p className="text-blue-600">Try adjusting your search criteria.</p>
+                            <p className="mt-4 text-lg text-blue-700 font-semibold">No se encontraron resultados</p>
+                            <p className="text-blue-600">Intenta ajustar tus criterios de búsqueda.</p>
                         </div>
                     )}
                     {!isLoading && !error && companies.length > 0 && (
                         <div>
                             <div className="flex justify-between items-center mb-4">
                                 <h2 className="text-2xl font-semibold text-gray-700">
-                                    Found <span className="text-blue-600">{companies.length}</span> Businesses
+                                    Se encontraron <span className="text-blue-600">{companies.length}</span> empresas
                                 </h2>
                                 <button
                                     onClick={handleExport}
                                     className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
                                 >
-                                    Export to CSV
+                                    Exportar a CSV
                                 </button>
                             </div>
                             <ResultsTable companies={companies} />
@@ -133,8 +132,9 @@ const App: React.FC = () => {
                 </div>
             </main>
              <footer className="text-center mt-8 text-sm text-gray-500">
-                <p>Data sourced from INEGI DENUE API. This is an independent tool.</p>
-                <p>The "Sección Amarilla" scraper from the original script is not included due to browser security constraints (CORS).</p>
+                <p>Datos obtenidos de la API DENUE del INEGI. Esta es una herramienta independiente.</p>
+                <p>Cumplimos con todas las normas de ley vigentes.</p>
+                <p>Lalo Carrillo</p>
             </footer>
         </div>
     );
